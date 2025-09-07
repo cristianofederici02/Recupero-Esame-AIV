@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "RecuperoEsame",
+			"Path": "..\\Source\\RecuperoEsame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "RecuperoEsameEditor",
+			"Path": "..\\Source\\RecuperoEsameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

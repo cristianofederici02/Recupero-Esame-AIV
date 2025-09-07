@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\progetti unity\\recupero esame unreal\\recuperoesame\\source\\recuperoesame\\recuperoesame.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\progetti unity\\recupero esame unreal\\recuperoesame\\intermediate\\build\\win64\\x64\\recuperoesameeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\progetti unity\\recupero esame unreal\\recuperoesame\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\recuperoesame\\definitions.recuperoesame.h",
+            "d:\\progetti unity\\recupero esame unreal\\recuperoesame\\source\\recuperoesame\\recuperoesame.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

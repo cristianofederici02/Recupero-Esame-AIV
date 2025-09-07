@@ -1,0 +1,22 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/AI/BT_BossAI.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/Blueprint/MyBossAIController.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/4/5T/866JTVRQDHDNJHONAKG4JL.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/CM/YFZGQBFI0SY66ESEW6OV6F.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/D2/T18OGXQCIS67WDJM2JKI5Q.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/Y1/1EULWGUHH0GTPDQCNF2G5R.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/Tasks/BTTask.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/Tasks/BTTask_.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/Tasks/BTTask_ChoosePatrolLocation.uasset",
+				"D:/Progetti Unity/Recupero Esame Unreal/RecuperoEsame/Content/Tasks/BTTask_AttackSelector.uasset"
+			]
+		}
+	]
+}
