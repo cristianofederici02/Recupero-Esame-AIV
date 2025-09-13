@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Progetti Unity\\Recupero Esame Unreal\\RecuperoEsame\\Source\\RecuperoEsame\\RecuperoEsame.Build.cs",
-		"D:\\Progetti Unity\\Recupero Esame Unreal\\RecuperoEsame\\Source\\RecuperoEsame.Target.cs",
-		"D:\\Progetti Unity\\Recupero Esame Unreal\\RecuperoEsame\\Source\\RecuperoEsameEditor.Target.cs"
+		"D:\\Progetti Unity\\Recupero-Esame-AIV\\Recupero Esame Unreal\\RecuperoEsame\\Source\\RecuperoEsame\\RecuperoEsame.Build.cs",
+		"D:\\Progetti Unity\\Recupero-Esame-AIV\\Recupero Esame Unreal\\RecuperoEsame\\Source\\RecuperoEsame.Target.cs",
+		"D:\\Progetti Unity\\Recupero-Esame-AIV\\Recupero Esame Unreal\\RecuperoEsame\\Source\\RecuperoEsameEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }

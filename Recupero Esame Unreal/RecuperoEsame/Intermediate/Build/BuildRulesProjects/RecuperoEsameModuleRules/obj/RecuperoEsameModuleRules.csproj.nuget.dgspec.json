@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Progetti Unity\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\RecuperoEsameModuleRules.csproj": {}
+    "D:\\Progetti Unity\\Recupero-Esame-AIV\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\RecuperoEsameModuleRules.csproj": {}
   },
   "projects": {
-    "D:\\Progetti Unity\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\RecuperoEsameModuleRules.csproj": {
+    "D:\\Progetti Unity\\Recupero-Esame-AIV\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\RecuperoEsameModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progetti Unity\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\RecuperoEsameModuleRules.csproj",
+        "projectUniqueName": "D:\\Progetti Unity\\Recupero-Esame-AIV\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\RecuperoEsameModuleRules.csproj",
         "projectName": "RecuperoEsameModuleRules",
-        "projectPath": "D:\\Progetti Unity\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\RecuperoEsameModuleRules.csproj",
+        "projectPath": "D:\\Progetti Unity\\Recupero-Esame-AIV\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\RecuperoEsameModuleRules.csproj",
         "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-        "outputPath": "D:\\Progetti Unity\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\obj\\",
+        "outputPath": "D:\\Progetti Unity\\Recupero-Esame-AIV\\Recupero Esame Unreal\\RecuperoEsame\\Intermediate\\Build\\BuildRulesProjects\\RecuperoEsameModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

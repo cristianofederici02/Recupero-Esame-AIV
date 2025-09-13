@@ -15,15 +15,6 @@
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
@@ -37,12 +28,6 @@
       <Filter>Source\RecuperoEsame</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RecuperoEsame\RecuperoEsame.h">
-      <Filter>Source\RecuperoEsame</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\RecuperoEsame\RecuperoEsameCharacter.cpp">
-      <Filter>Source\RecuperoEsame</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\RecuperoEsame\RecuperoEsameCharacter.h">
       <Filter>Source\RecuperoEsame</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\RecuperoEsame\RecuperoEsameGameMode.cpp">
@@ -60,19 +45,7 @@
     <ClCompile Include="..\..\Source\RecuperoEsame\BossStates.cpp">
       <Filter>Source\RecuperoEsame</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\RecuperoEsame\BossCharacter.h">
-      <Filter>Source\RecuperoEsame</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\RecuperoEsame\BossCharacter.cpp">
-      <Filter>Source\RecuperoEsame</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\RecuperoEsame\BossAIController.h">
-      <Filter>Source\RecuperoEsame</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\RecuperoEsame\BossAIController.cpp">
-      <Filter>Source\RecuperoEsame</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\RecuperoEsame\BTService_UpdateBossState.cpp">
       <Filter>Source\RecuperoEsame</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\RecuperoEsame\BTTask_AttackSelector.cpp">
@@ -87,7 +60,25 @@
     <ClInclude Include="..\..\Source\RecuperoEsame\BTTask_AttackSelector.h">
       <Filter>Source\RecuperoEsame</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\RecuperoEsame\BossCharacter.h">
+      <Filter>Source\RecuperoEsame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RecuperoEsame\BossAIController.h">
+      <Filter>Source\RecuperoEsame</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\RecuperoEsame\BTService_UpdateBossState.h">
+      <Filter>Source\RecuperoEsame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RecuperoEsame\BTService_UpdateBossState.cpp">
+      <Filter>Source\RecuperoEsame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RecuperoEsame\BossAIController.cpp">
+      <Filter>Source\RecuperoEsame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RecuperoEsame\RecuperoEsameCharacter.cpp">
+      <Filter>Source\RecuperoEsame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RecuperoEsame\RecuperoEsameCharacter.h">
       <Filter>Source\RecuperoEsame</Filter>
     </ClInclude>
   </ItemGroup>

@@ -40,7 +40,7 @@ private:
     UBlackboardData* BossBlackboard;
 
     UFUNCTION()
-    void OnPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus);
+    void OnTargetPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus);
 
     void SetTarget(AActor* Actor);
 };

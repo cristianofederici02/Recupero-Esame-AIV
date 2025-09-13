@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "BehaviorTree/BTService.h"
+#include "BehaviorTree/Services/BTService_BlackboardBase.h"
 #include "BossStates.h"
 #include "BTService_UpdateBossState.generated.h"
 
 UCLASS()
-class RECUPEROESAME_API UBTService_UpdateBossState : public UBTService {
+class RECUPEROESAME_API UBTService_UpdateBossState : public UBTService_BlackboardBase {
 	GENERATED_BODY()
 public:
 	UBTService_UpdateBossState();

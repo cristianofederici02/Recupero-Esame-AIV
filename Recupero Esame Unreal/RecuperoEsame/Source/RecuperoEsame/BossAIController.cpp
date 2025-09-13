@@ -6,12 +6,15 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "Perception/AIPerceptionComponent.h"
+#include "Perception/AIPerceptionTypes.h"
 #include "Perception/AISenseConfig_Sight.h"
 #include "Perception/AISenseConfig_Hearing.h"
 
 ABossAIController::ABossAIController()
 {
     PerceptionComp = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("AIPerceptionComp"));
+
+    UE_LOG(LogTemp, Warning, TEXT("BossAIController costruito"));
 
     SightConfig = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("SightConfig"));
     SightConfig->SightRadius = 2000.f;
@@ -34,7 +37,8 @@ void ABossAIController::BeginPlay()
 
     if (PerceptionComp)
     {
-        PerceptionComp->OnTargetPerceptionUpdated.AddDynamic(this, &ABossAIController::OnPerceptionUpdated);
+        PerceptionComp->OnTargetPerceptionUpdated.AddDynamic(this, &ABossAIController::OnTargetPerceptionUpdated);
+        UE_LOG(LogTemp, Warning, TEXT("Perception agganciato"));
     }
 }
 
@@ -42,13 +46,23 @@ void ABossAIController::OnPossess(APawn* InPawn)
 {
     Super::OnPossess(InPawn);
 
+    UE_LOG(LogTemp, Warning, TEXT("BossAIController: OnPossess chiamato per %s"), *InPawn->GetName());
     if (BossBlackboard && BossBehaviorTree)
     {
         UBlackboardComponent* BBComp;
         if (UseBlackboard(BossBlackboard, BBComp))
         {
             RunBehaviorTree(BossBehaviorTree);
+            UE_LOG(LogTemp, Warning, TEXT("Behavior Tree avviato: %s"), *BossBehaviorTree->GetName());
         }
+        else
+        {
+            UE_LOG(LogTemp, Error, TEXT("UseBlackboard fallito!"));
+        }
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("BossBlackboard o BossBehaviorTree non assegnato!"));
     }
     /*ABossCharacter* Boss = Cast<ABossCharacter>(InPawn);
     if (Boss && BossBehaviorTree)
@@ -57,16 +71,39 @@ void ABossAIController::OnPossess(APawn* InPawn)
     }*/
 }
 
-void ABossAIController::OnPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus)
+void ABossAIController::OnTargetPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus)
 {
-    if (Stimulus.WasSuccessfullySensed())
+    //*Actor->GetName(), Stimulus.WasSuccessfullySensed();
+    
+    //if (!Actor)return;
+    UBlackboardComponent* BB = GetBlackboardComponent();
+    UE_LOG(LogTemp, Warning, TEXT("Boss Percepisce: %s"),*Actor->GetName());
+    /*if (BB)
     {
-        SetTarget(Actor);
+        BB->SetValueAsObject(TEXT("TargetActor"), Actor);
+    }*/
+
+    if (!BB || !Actor)return;
+    
+    if (Stimulus.WasSuccessfullySensed()) 
+    {
+        BB->SetValueAsObject(TEXT("TargetActor"), Actor);
     }
     else
     {
-        SetTarget(nullptr);
+        BB->ClearValue(TEXT("TargetActor"));
     }
+    /*for (AActor* Actor : UpdatedActors) 
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Percepito: %s"), *Actor->GetName());
+
+        if (Cast<APawn>(Actor))
+        {
+            BB->SetValueAsObject(TEXT("TargetActor"), Actor);
+            return;
+        }
+    BB->ClearValue(TEXT("TargetActor"));
+    }*/
 }
 
 void ABossAIController::SetTarget(AActor* Actor)
