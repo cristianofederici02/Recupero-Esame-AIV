@@ -5,22 +5,19 @@
 #include "Kismet/GameplayStatics.h"
 #include "TimerManager.h"
 
-// Sets default values
+
 ABossCharacter::ABossCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
 }
 
-// Called when the game starts or when spawned
 void ABossCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-// Called every frame
 void ABossCharacter::MeleeAttack(AActor* Target)
 {
     if (!Target || !bCanAttack) return;
